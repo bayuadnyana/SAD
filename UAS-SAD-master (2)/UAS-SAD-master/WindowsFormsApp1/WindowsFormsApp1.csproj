@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FEAEA61C-2BBB-4BB1-8457-C09B3B1651AD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\mysql-for-visualstudio-1.2.9-noinstall\16.0v472\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Button_WOC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DetailReminder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailReminder.Designer.cs">
+      <DependentUpon>DetailReminder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KontakSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KontakSupplier.Designer.cs">
+      <DependentUpon>KontakSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KontakCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KontakCustomer.Designer.cs">
+      <DependentUpon>KontakCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUpTambahkanKontakSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUpTambahkanKontakSupplier.Designer.cs">
+      <DependentUpon>PopUpTambahkanKontakSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopupTransaksiPembelian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopupTransaksiPembelian.Designer.cs">
+      <DependentUpon>PopupTransaksiPembelian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopupTransaksiPenjualan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopupTransaksiPenjualan.Designer.cs">
+      <DependentUpon>PopupTransaksiPenjualan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQLFunction.cs" />
+    <Compile Include="StockBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockBarang.Designer.cs">
+      <DependentUpon>StockBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUpTambahkanProduk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUpTambahkanProduk.Designer.cs">
+      <DependentUpon>PopUpTambahkanProduk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UbahKontakCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbahKontakCustomer.Designer.cs">
+      <DependentUpon>UbahKontakCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUpTambahkanKontakCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUpTambahkanKontakCustomer.Designer.cs">
+      <DependentUpon>PopUpTambahkanKontakCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UbahKontakSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbahKontakSupplier.Designer.cs">
+      <DependentUpon>UbahKontakSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UbahProduk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbahProduk.Designer.cs">
+      <DependentUpon>UbahProduk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BelajarDoang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BelajarDoang.Designer.cs">
+      <DependentUpon>BelajarDoang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransaksiPembelian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransaksiPembelian.Designer.cs">
+      <DependentUpon>TransaksiPembelian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransaksiPenjualan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransaksiPenjualan.Designer.cs">
+      <DependentUpon>TransaksiPenjualan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reminder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reminder.Designer.cs">
+      <DependentUpon>Reminder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportMenu.Designer.cs">
+      <DependentUpon>ReportMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPenjualan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportPenjualan.Designer.cs">
+      <DependentUpon>ReportPenjualan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPembelian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportPembelian.Designer.cs">
+      <DependentUpon>ReportPembelian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportStock.Designer.cs">
+      <DependentUpon>ReportStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DetailReminder.resx">
+      <DependentUpon>DetailReminder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KontakSupplier.resx">
+      <DependentUpon>KontakSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KontakCustomer.resx">
+      <DependentUpon>KontakCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUpTambahkanKontakSupplier.resx">
+      <DependentUpon>PopUpTambahkanKontakSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopupTransaksiPembelian.resx">
+      <DependentUpon>PopupTransaksiPembelian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopupTransaksiPenjualan.resx">
+      <DependentUpon>PopupTransaksiPenjualan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockBarang.resx">
+      <DependentUpon>StockBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUpTambahkanProduk.resx">
+      <DependentUpon>PopUpTambahkanProduk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbahKontakCustomer.resx">
+      <DependentUpon>UbahKontakCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUpTambahkanKontakCustomer.resx">
+      <DependentUpon>PopUpTambahkanKontakCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbahKontakSupplier.resx">
+      <DependentUpon>UbahKontakSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbahProduk.resx">
+      <DependentUpon>UbahProduk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BelajarDoang.resx">
+      <DependentUpon>BelajarDoang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransaksiPembelian.resx">
+      <DependentUpon>TransaksiPembelian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransaksiPenjualan.resx">
+      <DependentUpon>TransaksiPenjualan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reminder.resx">
+      <DependentUpon>Reminder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportMenu.resx">
+      <DependentUpon>ReportMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportPenjualan.resx">
+      <DependentUpon>ReportPenjualan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportPembelian.resx">
+      <DependentUpon>ReportPembelian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportStock.resx">
+      <DependentUpon>ReportStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crispy chips.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
